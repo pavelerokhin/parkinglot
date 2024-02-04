@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h2 + div {
+    margin-top: 25px;
+}
+
+h3 {
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+#objectives {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#phases-diagram {
+    align-items: end;
+    flex: 2;
+    flex-direction: column;
+    text-align: end;
+}
+
+#queue-plot {
+    margin: 25px 0;
+}
+
+#vehicles-container {
+    color: blue;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.display {
+    margin: auto;
+}
+
+.header {
+    align-items: center;
+    width: 100%;
+}
+
+.parking-lot {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 50px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    height: 100%;
+    width: 50%;
+}
+
+.level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.level-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row-name {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.place, .queue-place {
+    border: 1px solid #000;
+    font-size: small;
+    font-weight: 300;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: 50px;
+}
+
+.place:not(:first-child) {
+    border-left: none;
+}
+
+.queue-place {
+    margin: 1px;
+}
+
+.queue-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.auto {
+    background-color: yellow;
+}
+
+.bus {
+    background-color: blue;
+    color: azure;
+}
+
+.moto {
+    background-color: red;
+}
+
+

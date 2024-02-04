@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Example</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<h1>Parking Lot</h1>
+<div class="container">
+    <div class="section">
+        <div id="display"></div>
+    </div>
+    <div class="section">
+        <div id="section">
+            <h2 class="header">Queue</h2>
+            <div id="queue"></div>
+            <div id="queue-plot"></div>
+        </div>
+        <div class="container">
+            <div id="objectives" class="section">
+                <h2 class="header">Metrics</h2>
+                <div id="time-container">
+                    <span>Time:</span>
+                    <span id="time">0</span>
+                    h
+                </div>
+                <div id="money-container">
+                    <span>Money:</span>
+                    <span id="money"></span>
+                    $
+                </div>
+                <div id="vehicles-container">
+                    <span>Vehicles served:</span>
+                    <span id="vehicles"></span>
+                </div>
+            </div>
+            <div id="phases-diagram" class="section">
+                <h2 class="header">Parking lot first 2 levels saturation</h2>
+                <h3 class="header">phase diagram</h3>
+                <div id="phases-diagram-plot"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+<script src="websocket-client.js"></script>
+</body>
+</html>
